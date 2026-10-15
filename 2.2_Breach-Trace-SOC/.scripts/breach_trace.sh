@@ -137,10 +137,11 @@ echo "4. Data Exfiltration"																						#Option 4
 echo "5. Enumerate open smb shares on the windows client or domain controller"
 #Part 2: 1.2 Dump hashes using impacket
 echo "6. Dump hashes using impacket"
-#Part 2: 1.3 Perform a DDOS attack using hping3 on the windows client
-echo "7. Perform a DDOS attack using hping3 on the windows client"
+#Part 2: 1.3 Perform a DOS attack using hping3 on the windows client
+echo "7. Perform a DOS attack using hping3 on the windows client"
+echo "8. SSH Login"
 echo ""
-read -p "Enter your choice (1-7): " attack
+read -p "Enter your choice (1-8): " attack
 echo "--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------"
 
 case $attack in
