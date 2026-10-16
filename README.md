@@ -6,14 +6,14 @@ security automation.
 
 ## Featured Projects
 
-### Breach Trail — Windows Forensics
-Automated memory analysis using Bash and Volatility 2/3 to extract forensic artefacts.
+### Breach Point — Penetration Testing
+Automated reconnaissance, vulnerability assessment and exploitation.
 
 ### Breach Trace — SOC Detection
 Simulated attacker activity and monitored security events using ELK/Kibana.
 
-### Breach Point — Penetration Testing
-Automated reconnaissance, vulnerability assessment and exploitation.
+### Breach Trail — Windows Forensics
+Automated memory analysis using Bash and Volatility 2/3 to extract forensic artefacts.
 
 ## Other Projects
 
